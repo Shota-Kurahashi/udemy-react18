@@ -1,6 +1,9 @@
+import { Suspense } from "react";
+import { ErrorBoundary } from "react-error-boundary";
 import "./App.css";
 import { AutoBatchEventHandler } from "./components/AutoBatchEventHandler";
 import { AutoBatchOther } from "./components/AutoBatchOther";
+import { ReactQuery } from "./components/ReactQuery";
 import { Transition } from "./components/Transition";
 
 function App() {
@@ -10,7 +13,10 @@ function App() {
     <div className="App">
       <AutoBatchEventHandler />
       <AutoBatchOther />
+      <hr />
       <Transition />
+      <hr />
+      <ReactQuery />
     </div>
   );
 }
